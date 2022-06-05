@@ -1,1 +1,318 @@
 /* You can add global styles to this file, and also import other style files */
+a{
+    text-decoration: none !important;
+}
+
+/* customize scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border: 1px solid #939AA9;
+    border-radius: 100px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fc9803f3;
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fc9803f3;
+  }
+  /*theme colors */   
+.bg-sw-dark{
+    background: #151515 !important;
+}
+.bg-widget-dark{
+    background: #fc9803f3 !important;
+}
+.bg-dark-highlight{
+    background: #202020;
+}
+.bg-dark-highlight-10{
+    background: #252525;
+}
+.bg-primary-dark-40{
+    background: #092D2A;
+}
+.bg-primary-dark-30{
+    background: #0C3835;
+}
+.bg-primary-dark-20{
+    background: #12504B;
+}
+.bg-primary-dark-10{
+    background: #186862;
+}
+.bg-primary-base{
+    background: #20847D;
+}
+
+.bg-primary-light-10{
+    background: #2AA098;
+}
+.bg-primary-light-20{
+    background: #5FB8B1;
+
+}
+.bg-primary-light-30{
+    background: #A6DAD6;
+}
+.bg-primary-light-40{
+    background: #DDEFEE;
+}
+
+.bg-secondary{
+    background: #AC4848;
+}
+
+.bg-musdard{
+    background: #FAB446;
+}
+
+/* text colors */
+.text-light-grey{
+    color:#FCFCFC;
+}
+.text-light-alternate-grey{
+    color:#EDEFF3;
+}
+.text-alternate-grey{
+    color: #939AA9;
+}
+.text-tertiary-grey{
+    color: #6C778C;
+}
+.text-dark-grey{
+    color: #656971;
+}
+.text-alternate-dark-grey{
+    color: #7C7F86;
+}
+.text-dark-grey-low-op{
+    color:#363A40;
+}
+.text-dark{
+    color: #262D3D;
+}
+.text-dark-10{
+    color: #71717A;
+}
+.text-dark-20{
+    color:#45494F;
+}
+.text-light-dark{
+    color: #455065;
+}
+.text-alternate{
+    color:#4B4C53;
+}
+.text-alternate-20{
+    color: #B6BCC7;
+}
+.text-sw-light{
+    color: #EDEFF3;
+}
+.text-white{
+    color: #FCFCFC;
+}
+.text-sw-white{
+    color: #E3E3E3;
+}
+.text-primary-dark-40{
+    color: #092D2A;
+}
+.text-primary-dark-30{
+    color: #0C3835;
+}
+.text-primary-dark-20{
+    color: #12504B;
+}
+.text-info-alert{
+    color: #007BC3;
+}
+.text-primary-dark-10{
+    color: #186862;
+}
+.text-primary-base{
+    color: #20847D;
+}
+
+.text-primary-light-10{
+    color: #2AA098;
+}
+.text-primary-light-20{
+    color: #5FB8B1;
+
+}
+.text-primary-light-30{
+    color: #A6DAD6;
+}
+.text-primary-light-40{
+    color: #DDEFEE;
+}
+.text-low-dark{
+   color: #92929E;
+}
+.text-mustard{
+    color: #FAB446;
+}
+.text-accent-mustard{
+    color: #CC943D;
+}
+.text-warning-alert{
+    color: #EF9302 !important;
+}
+.text-inactive{
+    color: #7D7D7D;
+}
+.text-shade-10{
+    color: #616066;
+}
+.text-green{
+    color: #52B03B;
+}
+.text-accent-teal{
+    color: #4B9FB1;
+}
+.text-success-alert{
+    color: #20A779;
+}
+.text-secondary-green{
+    color: #1D8252;
+}
+.text-secondary-red{
+    color: #D3485D;
+}
+.text-dark-red{
+    color: #E62B2B;
+}
+.text-failure-alert{
+    color: #EA4E2C;
+}
+.text-secondary-alert{
+    color:#AC4848;
+}
+.text-crimson-blue{
+    color: #4B55B1;
+}
+.text-crimson-red{
+    color: #B84D4D;
+}
+.text-orange{
+    color: #B56340;
+}
+/* font size , font type, font-weight and font-family*/
+/*stylework font-family,font-style,font-weight */
+*{
+    font-family:'Manrope';
+    font-style: normal;
+    letter-spacing: 0.0025em;
+}
+/*fw refers font-weight */
+.fw-normal{
+    font-weight: normal;
+}
+.fw-400{
+    font-weight:400;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.fw-200{
+    font-weight:200;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-800{
+    font-weight: 800;
+}
+
+/*font-size, where h1,h2....h6 refer headings and fs refers font-size*/
+.fs-h1{
+    font-size: 4rem;
+    line-height: 4rem;
+ 
+}
+
+.fs-h2{
+    font-size: 3.5rem;
+    line-height:3.5rem;
+}
+
+.fs-h3{
+    font-size:3rem;
+    line-height:3rem;
+}
+
+.fs-h4{
+    font-size: 2.75rem;
+    line-height:2.75rem;
+}
+
+.fs-h5{
+    font-size: 2.5rem;
+    line-height:2.5rem;
+}
+.fs-h6{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.fs-title{
+    font-size: 1.75rem;
+   
+}
+
+/*bd- refer body */
+.fs-largest{
+    font-size: 1.5rem;
+    
+}
+
+.fs-larger{
+    font-size: 1.25rem;
+   
+}
+
+.fs-large{
+    font-size: 1.125rem;
+    
+   
+}
+
+.fs-medium{
+    font-size: 1rem;
+   
+}
+
+.fs-regular{
+    font-size: 0.875rem;
+    
+}
+
+.fs-small{
+    font-size: 0.75rem;
+}
+
+.fs-smaller{
+    font-size: 0.625rem;
+   
+}
+
+.fs-smallest{
+    font-size: 0.5rem;
+}
