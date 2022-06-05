@@ -2,15 +2,15 @@
 class="text-center text-lg-start text-dark background-gradient"
 >
 <section
-  class="bg-dark"
+  class="bg-light shadow-lg"
 >
-  <div class="d-flex justify-content-md-between justify-content-center p-4 text-white container">
-    <div class="me-5 d-none d-md-block">
-      <span>Get connected with us:</span>
+  <div class="d-flex justify-content-md-between justify-content-center p-4 container">
+    <div class="me-5 d-none d-md-block text-info">
+      <h5>Get connected with us:</h5>
     </div>
     <div>
       <ng-container *ngFor="let social of socialMediaData">
-        <a [href]="social?.link" class="text-white me-md-4 me-3">
+        <a [href]="social?.link" class="me-md-4 me-3">
           <img [src]="social?.src" [alt]="social?.alt" height="32" width="32">
          </a>
   
