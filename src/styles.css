@@ -17,13 +17,13 @@ a{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #fc9803f3;
+    background: #5bc0de;
     border-radius: 100px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #fc9803f3;
+    background: #5bc0de;
   }
   /*theme colors */   
 .bg-sw-dark{
