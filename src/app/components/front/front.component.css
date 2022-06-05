@@ -1,0 +1,16 @@
+.margin-top{
+    padding-top:75px;
+}
+.carousel-item img{
+    height:90vh;
+}
+@media(max-width:992px){
+    .carousel-item img{
+        height:70vh;
+    }
+}
+@media(max-width:768px){
+    .carousel-item img{
+        height:60vh;
+    }
+}
