@@ -1,90 +1,89 @@
-<div class="mt-5">
-  <footer
-    class="text-center text-lg-start text-dark background-gradient"
-  >
-    <section
-      class="d-flex justify-content-md-between justify-content-center p-4 text-white bg-dark"
-    >
-      <div class="me-5 d-none d-md-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <div>
-        <ng-container *ngFor="let social of socialMediaData">
-          <a [href]="social?.link" class="text-white me-md-4 me-3">
-            <img [src]="social?.src" [alt]="social?.alt" height="32" width="32">
-           </a>
-
-        </ng-container>
-       
-      </div>
-    </section>
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h4 class="text-uppercase fw-bold fs-large">Company name</h4>
-            <hr
-              class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 100px; background-color: #7c4dff; height: 2px"
-            />
-            <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="col-lg-1"></div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-            <h4 class="text-uppercase fw-bold fs-large">Services</h4>
-            <hr
-              class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #7c4dff; height: 2px"
-            />
-            <ng-container *ngFor="let service of provideServices">
-              <h5 class="fw-600 fs-medium">
-                <a [href]="service?.link" class="text-dark">{{service?.name}}</a>
-              </h5>
-            </ng-container>
-          </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h4 class="text-uppercase fw-bold fs-large">Links</h4>
-            <hr
-              class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #7c4dff; height: 2px"
-            />
-            <h5 class="fw-600 fs-medium">
-              <a [href]="'#top'" class="text-dark">Home</a>
-            </h5>
-            <h5 class="fw-600 fs-medium">
-              <a [href]="'#about'" class="text-dark">About Us</a>
-            </h5>
-            <h5 class="fw-600 fs-medium">
-              <a [href]="'#contact'" class="text-dark">Contact Us</a>
-            </h5>
-            
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h4 class="text-uppercase fw-bold fs-large">Contact</h4>
-            <hr
-              class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #7c4dff; height: 2px"
-            />
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="text-center p-3 bg-info">
-      © 2022 Copyright:
-      <a class="text-dark" href="#">Company Name</a>
+<footer
+class="text-center text-lg-start text-dark background-gradient"
+>
+<section
+  class="bg-dark"
+>
+  <div class="d-flex justify-content-md-between justify-content-center p-4 text-white container">
+    <div class="me-5 d-none d-md-block">
+      <span>Get connected with us:</span>
     </div>
-  </footer>
+    <div>
+      <ng-container *ngFor="let social of socialMediaData">
+        <a [href]="social?.link" class="text-white me-md-4 me-3">
+          <img [src]="social?.src" [alt]="social?.alt" height="32" width="32">
+         </a>
   
+      </ng-container>
+     
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h4 class="text-uppercase fw-bold fs-large">Company name</h4>
+        <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 100px; background-color: #7c4dff; height: 2px"
+        />
+        <p>
+          Here you can use rows and columns to organize your footer content.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h4 class="text-uppercase fw-bold fs-large">Services</h4>
+        <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+        <ng-container *ngFor="let service of provideServices">
+          <h5 class="fw-600 fs-medium">
+            <a [href]="service?.link" class="text-dark">{{service?.name}}</a>
+          </h5>
+        </ng-container>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h4 class="text-uppercase fw-bold fs-large">Links</h4>
+        <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+        <h5 class="fw-600 fs-medium">
+          <a [href]="'#top'" class="text-dark">Home</a>
+        </h5>
+        <h5 class="fw-600 fs-medium">
+          <a [href]="'#about'" class="text-dark">About Us</a>
+        </h5>
+        <h5 class="fw-600 fs-medium">
+          <a [href]="'#contact'" class="text-dark">Contact Us</a>
+        </h5>
+        
+      </div>
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h4 class="text-uppercase fw-bold fs-large">Contact</h4>
+        <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="text-center p-3 bg-info">
+  © 2022 Copyright:
+  <a class="text-dark" href="#">Company Name</a>
 </div>
+</footer>
 

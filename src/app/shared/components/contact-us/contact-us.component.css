@@ -1,0 +1,34 @@
+.contact{
+    padding-top:90px;
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+}
+.contact::after{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    background:red;
+    width: 416.24px;
+    height: 505.84px;
+    left: 0;
+    top: 0;
+
+    background: linear-gradient(90deg, #9796F0 0.27%, #FBC7D4 148.57%);
+    opacity: 0.5;
+    filter: blur(150.18px);
+    transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
+}
+.contact::before{
+    content:"";
+    z-index: -1;
+    position: absolute;
+    width: 323.95px;
+    height: 355.44px;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #E65C00 4.96%, #F9D423 195.52%);
+    opacity: 0.4;
+    filter: blur(150.18px);
+    transform: matrix(0.23, 0.97, 0.97, -0.23, 0, 0);
+}
