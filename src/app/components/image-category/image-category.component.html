@@ -1,10 +1,13 @@
-<section class="py-3  mt-md-5 mt-3">
+<section class="py-3  mt-md-5 mt-3" id="weddingShoot">
     <div class="d-flex justify-content-between container"> 
        <ng-container *ngFor="let service of provideServices; let serviceIndex = index">
         <div [class]=" selectedTab === serviceIndex?'tab border-bottom border-3 border-info ':'tab '" 
         (click)="tabSelection(serviceIndex)">
-            <p [class]=" selectedTab === serviceIndex?'text-info fs-large fw-500':'text-muted fs-large fw-500'">
+            <p [class]=" selectedTab === serviceIndex?'text-info fs-large fw-500 d-md-block d-none':'text-muted fs-large fw-500 d-md-block d-none'">
                 {{service?.name}}
+            </p>
+            <p [class]=" selectedTab === serviceIndex?'text-info fs-small fw-500 d-md-none d-block':'text-muted fs-small fw-500 d-md-none d-block'">
+                {{service.name.split('&')[0]}}
             </p>
         </div>
        </ng-container>
