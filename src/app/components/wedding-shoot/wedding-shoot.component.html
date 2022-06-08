@@ -1,5 +1,7 @@
-<div class="row" id="weddingShoot">
-    <div class="image-card col-6 col-md-4 mb-2" *ngFor="let img of [].constructor(12); let i = index">
-       <img class="img-fluid" [src]="'assets/weddingShoot/'+(i+1)+'.jpg'" [alt]="i">
+<div class="row">
+    <div class="col-6 col-md-4 mb-4" *ngFor="let img of [].constructor(12); let i = index">
+      <div class="image-card ">
+        <img class="img-fluid" [src]="'assets/weddingShoot/'+(i+1)+'.jpg'" [alt]="i">
+      </div>
     </div>
 </div>
