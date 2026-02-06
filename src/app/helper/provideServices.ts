@@ -1,18 +1,18 @@
 export const provideServices = [
     {
-        name:'Wedding Shoot',
+        name:'Brand Promotion',
         link:'#weddingShoot',
     },
     {
-        name:'Pre Wedding Shoot',
-        link:'#preweddingShoot'
+        name:'Led Advertisement',
+        link:'#weddingShoot',
     },
     {
-        name:'Engagement & Anniversary',
-        link:'#engagement'
+        name:'Led Van Promotion',
+        link:'#weddingShoot',
     },
     {
-        name:'Birthday & Others',
-        link:'#birthday'
+        name:'Rural Activities',
+        link:'#weddingShoot',
     }
 ]

@@ -10,10 +10,12 @@ import { socialMedia } from 'src/app/helper/socialMedialLink';
 export class FooterComponent implements OnInit {
   socialMediaData = socialMedia;
   provideServices = provideServices;
+
+  year:string = ""
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.socialMediaData)
+    this.year = new Date().getFullYear().toString();
   }
 
 }
