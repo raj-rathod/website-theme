@@ -2,7 +2,7 @@
     padding-top:75px;
 }
 .carousel-item img{
-    height:90vh;
+    height:80vh;
 }
 @media(max-width:992px){
     .carousel-item img{
@@ -11,6 +11,6 @@
 }
 @media(max-width:768px){
     .carousel-item img{
-        height:60vh;
+        height:40vh;
     }
 }

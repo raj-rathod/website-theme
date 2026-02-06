@@ -32,3 +32,9 @@
     filter: blur(150.18px);
     transform: matrix(0.23, 0.97, 0.97, -0.23, 0, 0);
 }
+
+@media(max-width:768px){
+  .contact{
+    padding-top:30px;
+}
+}
