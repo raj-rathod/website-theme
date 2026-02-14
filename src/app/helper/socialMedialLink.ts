@@ -16,7 +16,7 @@ export const socialMedia = [
     },
     {
         src:'assets/social-media/gmail.svg',
-        link: 'mailto:rajeshrathore05011998@gmail.com',
+        link: 'mailto:shakticommunicationindore@gmail.com',
         alt: 'Google'
     }
 ]
