@@ -1,18 +1,18 @@
 export const provideServices = [
     {
         name:'Brand Promotion',
-        link:'#weddingShoot',
+        link:'/services',
     },
     {
         name:'Led Advertisement',
-        link:'#weddingShoot',
+        link:'/services',
     },
     {
         name:'Led Van Promotion',
-        link:'#weddingShoot',
+        link:'/services',
     },
     {
         name:'Rural Activities',
-        link:'#weddingShoot',
+        link:'/services',
     }
 ]
