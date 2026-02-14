@@ -1,0 +1,152 @@
+.margin-top{
+    padding-top:75px;
+}
+.services-hero {
+  height: 100vh;
+  min-height: 100vh;
+  background: url('/assets/images/hero-section.png') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.75),
+    rgba(13, 110, 253, 0.6)
+  );
+  z-index: 0;
+}
+
+/* Text Animations */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.hero-buttons {
+  opacity: 1;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* Highlight text */
+.highlight {
+  color: #ffc107;
+}
+
+/* Button hover animation */
+.btn-info {
+  transition: all 0.3s ease;
+  outline-style: none;
+}
+
+.btn-info:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.5);
+  outline-style: none;
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  color: #000;
+}
+
+/* Floating background animation */
+.services-hero::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveBackground 20s linear infinite;
+  z-index: -1;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator span {
+  display: block;
+  width: 25px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.scroll-indicator span::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollDown 1.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveBackground {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 1;
+    top: 8px;
+  }
+  100% {
+    opacity: 0;
+    top: 25px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}

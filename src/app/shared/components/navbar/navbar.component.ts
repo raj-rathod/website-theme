@@ -12,4 +12,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closeNavbar() {
+  const navbar = document.getElementById('navbarTogglerDemo02');
+  if (navbar?.classList.contains('show')) {
+    navbar.classList.remove('show');
+  }
+}
+
+
 }

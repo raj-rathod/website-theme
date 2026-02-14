@@ -45,7 +45,7 @@ class="text-center text-lg-start text-dark background-gradient"
         />
         <ng-container *ngFor="let service of provideServices">
           <h5 class="fw-600 fs-medium">
-            <a [href]="service?.link" class="text-dark">{{service?.name}}</a>
+            <a [routerLink]="service?.link" class="text-dark">{{service?.name}}</a>
           </h5>
         </ng-container>
       </div>
